@@ -1,0 +1,307 @@
+@import url(normalize.css);
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+/* use this class for block that has child floated elements */
+.ba-clearfix:before,
+.ba-clearfix:after {
+  content: '';
+  display: table; }
+
+.ba-clearfix:after {
+  clear: both; }
+
+/* hack for IE 6/7 */
+.ba-clearfix {
+  *zoom: 1; }
+
+/* classes for text */
+.ba-text-center {
+  text-align: center; }
+
+.ba-text-left {
+  text-align: left; }
+
+.ba-text-right {
+  text-align: right; }
+
+.ba-text-justify {
+  text-align: justify; }
+
+/* layout classes */
+.ba-container {
+  max-width: 1470px;
+  margin: 0 auto; }
+
+.ba-float-left {
+  float: left; }
+
+.ba-float-right {
+  float: right; }
+
+/* ba grid defination */
+/* use this class for block that has child floated elements */
+.ba-grid:before,
+.ba-grid:after {
+  content: '';
+  display: table; }
+
+.ba-grid:after {
+  clear: both; }
+
+/* hack for IE 6/7 */
+.ba-grid {
+  *zoom: 1; }
+
+.ba-grid {
+  margin: 0 -15px; }
+
+.ba-grid + .ba-grid {
+  margin-top: 30px; }
+
+.ba-grid > [class*="ba-column-"] {
+  padding: 0 15px; }
+
+[class*="ba-column-"] {
+  float: left; }
+
+.ba-column-12 {
+  width: 100%; }
+
+.ba-column-11 {
+  width: 91.667%; }
+
+.ba-column-10 {
+  width: 83.334%; }
+
+.ba-column-9 {
+  width: 75%; }
+
+.ba-column-8 {
+  width: 66.667%; }
+
+.ba-column-7 {
+  width: 58.33333333%; }
+
+.ba-column-6 {
+  width: 50%; }
+
+.ba-column-5 {
+  width: 41.6666667%; }
+
+.ba-column-4 {
+  width: 33.334%; }
+
+.ba-column-3 {
+  width: 25%; }
+
+.ba-column-2 {
+  width: 16.667%; }
+
+.ba-column-1 {
+  width: 8.334%; }
+
+body {
+  padding-top: 50px; }
+
+.ba-container {
+  width: 1300px; }
+
+.ba-header {
+  margin-bottom: 40px; }
+
+.ba-logo {
+  padding-left: 46px; }
+
+.ba-navigation {
+  list-style-type: none;
+  margin-top: 24px; }
+  .ba-navigation__item {
+    float: left; }
+    .ba-navigation__item + .ba-navigation__item {
+      margin-left: 84px; }
+  .ba-navigation__link {
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    color: #000;
+    padding-bottom: 8px;
+    transition: all .1s ease-in; }
+    .ba-navigation__link:hover {
+      border-bottom: 6px #f2f2f2 solid; }
+
+.ba-banner {
+  position: relative;
+  padding: 0 0 0 100px;
+  min-height: 500px;
+  margin-bottom: 100px; }
+  .ba-banner__text {
+    padding-top: 75px;
+    z-index: 4;
+    width: 44%;
+    position: absolute; }
+  .ba-banner__image {
+    z-index: 0; }
+    .ba-banner__image img {
+      position: absolute;
+      display: block;
+      top: 0;
+      right: 0; }
+  .ba-banner__number {
+    background-color: #97d1eb;
+    float: left;
+    width: 72px;
+    height: 72px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 48px;
+    color: #fff;
+    text-align: center;
+    line-height: 1.4;
+    margin-right: 5px;
+    position: relative; }
+    .ba-banner__number .ba-slider__arrow {
+      position: absolute;
+      border: 1px #eff1f5 solid;
+      border-radius: 0;
+      background: none;
+      font-size: 16px;
+      padding: 8px 16px 8px 14px;
+      text-align: center;
+      transition: all .3s ease-in;
+      cursor: pointer; }
+      .ba-banner__number .ba-slider__arrow:hover {
+        background-color: #eff1f5; }
+      .ba-banner__number .ba-slider__arrow--right {
+        bottom: -36px;
+        left: 50%;
+        transform: translateX(-50%); }
+      .ba-banner__number .ba-slider__arrow--left {
+        top: -36px;
+        left: 50%;
+        transform: translateX(-50%); }
+  .ba-banner__title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 60px;
+    margin: 0 0 0 80px;
+    padding-bottom: 20px;
+    border-bottom: 4px #97d1eb solid; }
+
+.slick-dots {
+  list-style-type: none;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 100px; }
+  .slick-dots button {
+    cursor: pointer; }
+  .slick-dots .slick-active button {
+    text-decoration: line-through;
+    color: #000; }
+  .slick-dots li {
+    display: inline-block; }
+  .slick-dots button {
+    background: none;
+    border: none;
+    border-radius: 0;
+    margin-left: 25px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    color: #bcc0cd;
+    letter-spacing: 0.1em; }
+
+.ba-ideas {
+  padding: 0 150px;
+  margin-bottom: 120px;
+  position: relative; }
+  .ba-ideas .ba-column-6 {
+    padding-top: 25px; }
+  .ba-ideas__title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    color: #9ca2b4;
+    margin-top: 0; }
+  .ba-ideas p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    line-height: 2;
+    color: #9ca2b4;
+    width: 75%; }
+  .ba-ideas .ba-banner__title {
+    border: none;
+    width: 75%;
+    position: relative;
+    z-index: 1;
+    padding-top: 50px; }
+  .ba-ideas__img {
+    position: absolute;
+    top: -24%;
+    right: 0;
+    z-index: 0; }
+
+.ba-services {
+  margin-bottom: 100px; }
+  .ba-services .ba-grid .ba-column-3 {
+    padding: 0 !important; }
+
+.ba-service {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 36px;
+  color: #fff;
+  margin-top: 0;
+  background-size: cover;
+  height: 450px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer; }
+  .ba-service:hover::after {
+    top: 15px;
+    bottom: 15px;
+    left: 15px;
+    right: 15px; }
+  .ba-service:after {
+    content: '';
+    position: absolute;
+    border: 15px #97d1eb solid;
+    top: -15px;
+    bottom: -15px;
+    left: -15px;
+    right: -15px;
+    transition: all .3s ease-in; }
+  .ba-service__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0; }
+  .ba-service__idea {
+    background: transparent url("../images/idea.jpg") left top no-repeat; }
+  .ba-service__concept {
+    background: transparent url("../images/concept.jpg") left top no-repeat; }
+  .ba-service__design {
+    background: transparent url("../images/design.jpg") left top no-repeat; }
+  .ba-service__develope {
+    background: transparent url("../images/develop.jpg") left top no-repeat; }
+
+.ba-work {
+  background: transparent url("../images/we_work.jpg") center top no-repeat;
+  text-align: center;
+  min-height: 400px; }
+  .ba-work__title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+    color: #97d1eb; }
+  .ba-work h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 36px;
+    color: #000;
+    padding-top: 80px; }
